@@ -18,6 +18,7 @@ namespace SuperMarket.API.Controllers
         public CategoriesController(ICategoryService categoryService)
         {
             _categoryService = categoryService;
+
         }
         [HttpGet]
         public async Task<IEnumerable<Category>> GetAllAsync()
